@@ -9,6 +9,18 @@ face.resize(width,height);
 }
 void draw(){
   background(face);
+  if(mouseX<=92){
+    mouseX=92;
+  }
+  if (mouseY<=110){
+    mouseY=110;
+  }
+  if(mouseX>=109){
+  mouseX=109;
+  }  
+  if(mouseY>=132){
+    mouseY=132;
+  }
  fill(240,238,97);
 ellipse(180,120,50,70);
 ellipse(100,150,40,60);
@@ -19,6 +31,12 @@ fill(0,0,0);
 ellipse(mouseX+80,mouseY,13,32);
 ellipse(mouseX,mouseY+30,8,22);
 
+
+
+}
+
+void mouseClicked(){
+print("x= "+mouseX+"y= "+mouseY);
 }
 //1. Create a new sketch in Processing and add setup() and draw() methods.
 //2. Find an image on the internet and drop it into your sketch. It can be anything ,//
