@@ -35,16 +35,18 @@ public class FruitQuiz extends KeyAdapter {
 			
 		if (question1.isShowing()) {
 			// 3. If they selected the right fruit, do steps 4 and 7
-			if ()
+			if (keyCode==C) {
 				// 4. Call the correct() method
 				correct();
 				// 7. Use the nextQuestion() method to go to question2
-			
+			nextQuestion();
 			
 			// 8. else (if they touched something else)
-				
+			else {
 				// 9. Call the incorrect() method
-		
+				incorrect();
+			
+			}
 		}
 
 	}
@@ -54,7 +56,7 @@ public class FruitQuiz extends KeyAdapter {
 		// the default package. It must be a .wav file. 
 		// There are lots on freesound.org
 		// 6. Use the playSound method to play your sound
-
+		playSound("slowclap.wav");
 
 	}
 
