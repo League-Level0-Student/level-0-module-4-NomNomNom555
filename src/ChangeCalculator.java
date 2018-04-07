@@ -29,7 +29,7 @@ double dimes= ten*.1;
 double quarters=twentyfive*.25;
 		// Tell the user how much money they have
 	double all= nickels+dimes+quarters;
-	JOptionPane.showMessageDialog(null, "You have "+all+" cents");
+	JOptionPane.showMessageDialog(null, "You have "+all+" in coins.");
 	}
 }
 
